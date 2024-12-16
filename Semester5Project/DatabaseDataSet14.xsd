@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DatabaseDataSet14" targetNamespace="http://tempuri.org/DatabaseDataSet14.xsd" xmlns:mstns="http://tempuri.org/DatabaseDataSet14.xsd" xmlns="http://tempuri.org/DatabaseDataSet14.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DatabaseConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DatabaseConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Semester5Project.Properties.Settings.GlobalReference.Default.DatabaseConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="MilkProTblTableAdapter" GeneratorDataComponentClassName="MilkProTblTableAdapter" Name="MilkProTbl" UserDataComponentName="MilkProTblTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DatabaseConnectionString (Settings)" DbObjectName="dbo.MilkProTbl" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CowID, CowName, TotalMilk, Date FROM dbo.MilkProTbl</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CowID" DataSetColumn="CowID" />
+              <Mapping SourceColumn="CowName" DataSetColumn="CowName" />
+              <Mapping SourceColumn="TotalMilk" DataSetColumn="TotalMilk" />
+              <Mapping SourceColumn="Date" DataSetColumn="Date" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DatabaseDataSet14" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="DatabaseDataSet14" msprop:Generator_DataSetName="DatabaseDataSet14">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="MilkProTbl" msprop:Generator_RowEvHandlerName="MilkProTblRowChangeEventHandler" msprop:Generator_RowDeletedName="MilkProTblRowDeleted" msprop:Generator_RowDeletingName="MilkProTblRowDeleting" msprop:Generator_RowEvArgName="MilkProTblRowChangeEvent" msprop:Generator_TablePropName="MilkProTbl" msprop:Generator_RowChangedName="MilkProTblRowChanged" msprop:Generator_RowChangingName="MilkProTblRowChanging" msprop:Generator_TableClassName="MilkProTblDataTable" msprop:Generator_RowClassName="MilkProTblRow" msprop:Generator_TableVarName="tableMilkProTbl" msprop:Generator_UserTableName="MilkProTbl">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CowID" msprop:Generator_ColumnPropNameInRow="CowID" msprop:Generator_ColumnPropNameInTable="CowIDColumn" msprop:Generator_ColumnVarNameInTable="columnCowID" msprop:Generator_UserColumnName="CowID" type="xs:int" />
+              <xs:element name="CowName" msprop:Generator_ColumnPropNameInRow="CowName" msprop:Generator_ColumnPropNameInTable="CowNameColumn" msprop:Generator_ColumnVarNameInTable="columnCowName" msprop:Generator_UserColumnName="CowName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TotalMilk" msprop:Generator_ColumnPropNameInRow="TotalMilk" msprop:Generator_ColumnPropNameInTable="TotalMilkColumn" msprop:Generator_ColumnVarNameInTable="columnTotalMilk" msprop:Generator_UserColumnName="TotalMilk" type="xs:int" />
+              <xs:element name="Date" msprop:Generator_ColumnPropNameInRow="Date" msprop:Generator_ColumnPropNameInTable="DateColumn" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_UserColumnName="Date" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
